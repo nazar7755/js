@@ -68,10 +68,38 @@
 // console.log(repeat('ух', 3)); // "ухухух"
 // console.log(repeat('а', 5)); // "ааааа"
 
-const maxOfThree = function (a, b, c, d) {
-  return Math.max(a, b, c, d);
-};
+// Задание 8: Максимум из трех чисел
+// Напиши функцию maxOfThree, которая принимает три числа и возвращает наибольшее из них.
 
-console.log(maxOfThree(1, 2, 4, 7));
-console.log(maxOfThree(4, 12, 14, 79));
-console.log(maxOfThree(16, 23, 41, 17));
+// const maxOfThree = function (a, b, c, d) {
+//   return Math.max(a, b, c, d);
+// };
+
+// console.log(maxOfThree(1, 2, 4, 7));
+// console.log(maxOfThree(4, 12, 14, 79));
+// console.log(maxOfThree(16, 23, 41, 17));
+
+// Задание 9: Проверка на "пустоту"
+// Создай функцию isEmpty, которая принимает строку и возвращает true, если строка пустая (длина 0), и false, если в ней есть символы.
+
+// const isEmpty = function (str) {
+//   if (str.length === 0) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// };
+
+// console.log(isEmpty(''));
+// console.log(isEmpty(' j'));
+
+// const isEmpty = function (str) {
+//   return str.length === 0;
+// };
+
+// console.log(isEmpty(''));
+// console.log(isEmpty(' '));
+// console.log(isEmpty('hello'));
+
+// Задание 11: Первая буква заглавная
+// Создай функцию capitalize, которая принимает строку и возвращает её с первой буквой в верхнем регистре, а остальные буквы оставляет как есть.
