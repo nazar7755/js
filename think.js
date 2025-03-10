@@ -145,8 +145,16 @@
 // Задание 14: Фильтр четных чисел
 // Создай функцию filterEven, которая принимает массив чисел и возвращает новый массив, содержащий только четные числа.
 
-const filterEven = function (a, b, c) {
-  return filterEven;
-};
+// const average = function (num) {
+//   let total = 0;
 
-console.log(filterEven([2, 4, 6]));
+//   for (const item of num) {
+//     total += item;
+//   }
+
+//   return total / num.length;
+// };
+
+// console.log(average([2, 3, 4, 5, 6]));
+// console.log(average([1, 2, 3, 4, 5]));
+// console.log(average([1, 1, 1, 1, 1]));
