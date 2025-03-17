@@ -54,5 +54,50 @@ const rounder = function (places) {
 const rounder2 = rounder(2);
 const rounder3 = rounder(3);
 
-console.log(rounder2(3.345));
-console.log(rounder3(3.12345678));
+// console.log(rounder2(3.345));
+// console.log(rounder3(3.12345678));
+
+const myLibFactory = function () {
+  let value = 0;
+
+  const add = function (num) {
+    value += num;
+  };
+
+  return {
+    add: add,
+    getValue(value) {
+      return value;
+    },
+  };
+};
+
+// const myLib = myLibFactory();
+// console.log(myLib);
+
+// console.log(myLib.getValue());
+// myLib.add(10);
+
+const salaryManagerFactory = function (employeeName, baseSalary = 0) {
+  let salary = baseSalary;
+
+  const changeBy = function (amount) {
+    salary += amount;
+  };
+
+  return {
+    raise(amount) {
+      salary += amount;
+    },
+    lower(amount) {
+      salary -= amount;
+    },
+    current() {
+      return `Текущая зарплата ${employeeName} - ${salary}`;
+    },
+  };
+};
+
+const salaryManager = salaryManagerFactory('Mango', 5000);
+
+// console.log(salaryManager.current());
